@@ -18,8 +18,7 @@ func main() {
 
 	str := input
 
-
-	t, err := time.Parse(layout, str)//string olarak girilen tarihi yukarıdaki şablona göre parse et
+	t, err := time.Parse(layout, str) //string olarak girilen tarihi yukarıdaki şablona göre parse et
 
 	if err != nil{ //Hata durumda hatayı ekrana yazdır
 		p(err)
